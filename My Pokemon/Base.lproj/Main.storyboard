@@ -48,6 +48,9 @@
                                     <constraint firstAttribute="width" constant="50" id="dQP-pa-XTk"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="poke_ball"/>
+                                <connections>
+                                    <action selector="bSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zPr-1W-RrI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="83E-Xl-SlN">
                                 <rect key="frame" x="112" y="327" width="150" height="150"/>
@@ -56,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="150" id="jd7-nN-LxY"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osl-yt-xXk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osl-yt-xXk">
                                 <rect key="frame" x="62" y="507" width="250" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="7Ih-Gc-tgV"/>
@@ -86,6 +89,11 @@
                             <constraint firstItem="83E-Xl-SlN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0m-It-c7T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgPokemon" destination="83E-Xl-SlN" id="6MR-sh-9zc"/>
+                        <outlet property="lbPokemonName" destination="osl-yt-xXk" id="rms-3s-tTu"/>
+                        <outlet property="tbPokemonName" destination="1Mp-o3-PNu" id="j2w-oR-Ycf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
